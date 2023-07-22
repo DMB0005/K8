@@ -5,8 +5,8 @@ metadata:
   namespace: robot
 spec:
   containers:
-    - image: nginx:1.14.2
-      name: nginx
-      ports:
-        containerPort: 80
+  - image: nginx:1.14.2
+    name: nginx
+    ports:
+      - containerPort: 80
 
