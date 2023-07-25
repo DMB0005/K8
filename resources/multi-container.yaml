@@ -4,8 +4,10 @@ metadata:
   name: multi-container
 spec:
   containers:
-    - image: nginx
+    - image: nginx:1.14.2
       name: nginx
+      ports:
+        - containerPort: 80
     - image: almalinux:8
-      name: almalinux
+      name: sidecar
       command: ["sleep","200"]
