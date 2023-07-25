@@ -4,8 +4,8 @@ metadata:
   name: image-pull
 spec:
   containers:
-    - image: nginx
+    - image: nginx:1.14.2
       name: nginx
       imagePullPolicy: Always
       ports:
-        containerport: 80
+       - containerport: 80
