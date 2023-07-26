@@ -6,8 +6,6 @@ spec:
   containers:
     - image: dmbabu/stress
       name: stress
-      ports:
-        containePort:80
       resources:
         requests:
           cup: "200m"
