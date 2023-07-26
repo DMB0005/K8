@@ -8,6 +8,14 @@ spec:
       name: resource
       imagePullPolicy: Always
       command: ["sleep","500"]
+        resources:
+          requests:
+            memory: "64mi"
+            cpu: "250m"
+          limits:
+            memory: "71mi"
+            cpu: "300m"
+
 
 
 
