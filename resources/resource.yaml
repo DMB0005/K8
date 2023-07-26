@@ -4,8 +4,8 @@ metadata:
   name: stress
 spec:
   containers:
-    - image: tomcat
-      name: tomcat
+    - image: dmbabu/stress
+      name: stress
       ports:
         containePort:80
       resources:
