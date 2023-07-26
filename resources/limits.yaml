@@ -23,7 +23,6 @@ spec:
         cpu: "1"
       min:
         cpu: 100m
-      type: Pod
 ---
 apiVersion: v1
 kind: Pod
