@@ -4,17 +4,17 @@ metadata:
   name: stress
 spec:
   containers:
-    - image: dmbabu/stress
-      name: resource
-      imagePullPolicy: Always
-      command: ["sleep","500"]
+    - image: tomcat
+      name: tomcat
+      ports:
+        containePort:80
       resources:
         requests:
-          memory: "64mi"
-          cpu: "250m"
+          cup: "200m"
+          memory: "150mi"
         limits:
-          memory: "71mi"
-          cpu: "300m"
+          cpu: "500m"
+          memory: "250mi"
 
 
 
